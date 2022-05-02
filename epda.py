@@ -120,7 +120,7 @@ def main():
 			for val in popped_vals:
 				epda_temp.push(val)
 			# print out
-			print('Current view of stack:')
+			print('Current view of stack (Right=Top):')
 			print(epda_temp.strPrint())
 			nd = input('This step involved nondeterminism. Would you like to try this step again? Y/N')
 			if nd=='N':
@@ -145,7 +145,7 @@ def main():
 			for val in popped_vals:
 				epda.push(val)
 			# print out
-			print('Current view of stack:')
+			print('Current view of stack (Right=Top):')
 			print(epda.strPrint())
 			i += 1
 		time.sleep(1)
